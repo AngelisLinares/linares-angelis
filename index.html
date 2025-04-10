@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Perfil </title>
+</head>
+<body>
+    <div class="card">
+        <img src="img/perfil.png" alt="Perfil" class="profile-img">
+            <div class="name">Angelis Linares</div>
+            <div class="description">Apasionado por la tecnología y el aprendizaje constante.</div>
+            <ul class="hobbies">
+              <li>📚Leer</li>
+              <li>💻Programar</li>
+              <li>🎞️Fotografia</li>
+              <li>🎧Musica</li>
+            </ul>
+            <button class="show-btn" onclick="toggleInfo()">Mostrar más</button>
+            <div class="more-info" id="extra-info">
+              Vivo en Panama , me dedico a agarrar gatos de la calle Xd
+            </div>
+          </div>
+          <script>
+            function toggleInfo() {
+              const info = document.getElementById('extra-info');
+        info.style.display = (info.style.display === 'none' || info.style.display === '') ? 'block' : 'none';
+    }
+          </script>
+         
+</body>
+</html>
